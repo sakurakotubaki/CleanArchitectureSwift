@@ -11,6 +11,10 @@
 		C3282CB12C29656E00826AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3282CB02C29656E00826AB7 /* ContentView.swift */; };
 		C3282CB32C29656F00826AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3282CB22C29656F00826AB7 /* Assets.xcassets */; };
 		C3282CB62C29656F00826AB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3282CB52C29656F00826AB7 /* Preview Assets.xcassets */; };
+		C3282CC22C296CA500826AB7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3282CC12C296CA500826AB7 /* Post.swift */; };
+		C3282CC42C29773E00826AB7 /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3282CC32C29773E00826AB7 /* PostsRepository.swift */; };
+		C3282CC62C29776000826AB7 /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3282CC52C29776000826AB7 /* FetchPostsUseCase.swift */; };
+		C3282CC82C29787C00826AB7 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3282CC72C29787C00826AB7 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C3282CB02C29656E00826AB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3282CB22C29656F00826AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3282CB52C29656F00826AB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3282CC12C296CA500826AB7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C3282CC32C29773E00826AB7 /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		C3282CC52C29776000826AB7 /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
+		C3282CC72C29787C00826AB7 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		C3282CAD2C29656E00826AB7 /* CleanArchitectureSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C3282CC02C296C8200826AB7 /* Presentation */,
 				C3282CAE2C29656E00826AB7 /* CleanArchitectureSwiftApp.swift */,
-				C3282CB02C29656E00826AB7 /* ContentView.swift */,
+				C3282CBC2C296C1300826AB7 /* Domain */,
 				C3282CB22C29656F00826AB7 /* Assets.xcassets */,
 				C3282CB42C29656F00826AB7 /* Preview Content */,
 			);
@@ -65,6 +74,49 @@
 				C3282CB52C29656F00826AB7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3282CBC2C296C1300826AB7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C3282CBF2C296C4200826AB7 /* Interfases */,
+				C3282CBE2C296C3100826AB7 /* UseCases */,
+				C3282CBD2C296C2200826AB7 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C3282CBD2C296C2200826AB7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C3282CC12C296CA500826AB7 /* Post.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C3282CBE2C296C3100826AB7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C3282CC52C29776000826AB7 /* FetchPostsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C3282CBF2C296C4200826AB7 /* Interfases */ = {
+			isa = PBXGroup;
+			children = (
+				C3282CC32C29773E00826AB7 /* PostsRepository.swift */,
+			);
+			path = Interfases;
+			sourceTree = "<group>";
+		};
+		C3282CC02C296C8200826AB7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C3282CB02C29656E00826AB7 /* ContentView.swift */,
+				C3282CC72C29787C00826AB7 /* PostViewModel.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3282CC82C29787C00826AB7 /* PostViewModel.swift in Sources */,
+				C3282CC62C29776000826AB7 /* FetchPostsUseCase.swift in Sources */,
+				C3282CC22C296CA500826AB7 /* Post.swift in Sources */,
+				C3282CC42C29773E00826AB7 /* PostsRepository.swift in Sources */,
 				C3282CB12C29656E00826AB7 /* ContentView.swift in Sources */,
 				C3282CAF2C29656E00826AB7 /* CleanArchitectureSwiftApp.swift in Sources */,
 			);
