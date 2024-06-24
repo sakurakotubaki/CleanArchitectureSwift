@@ -79,7 +79,7 @@
 		C3282CBC2C296C1300826AB7 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				C3282CBF2C296C4200826AB7 /* Interfases */,
+				C3282CBF2C296C4200826AB7 /* Repository */,
 				C3282CBE2C296C3100826AB7 /* UseCases */,
 				C3282CBD2C296C2200826AB7 /* Entities */,
 			);
@@ -102,12 +102,12 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		C3282CBF2C296C4200826AB7 /* Interfases */ = {
+		C3282CBF2C296C4200826AB7 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				C3282CC32C29773E00826AB7 /* PostsRepository.swift */,
 			);
-			path = Interfases;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		C3282CC02C296C8200826AB7 /* Presentation */ = {
